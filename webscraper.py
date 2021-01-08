@@ -34,15 +34,15 @@ def send_mail():
     server.starttls()
     server.ehlo()
     
-    server.login('mdevyani0@gmail.com','gibihomeymytgmfp')
+    server.login('your email ID',' your password ')
     
     subject = 'Price has been lowered !!'
     body = 'Check this product link again !! https://www.amazon.in/Juarez-JRZ23UK-NA-Hawaiian-Fingerboard/dp/B06Y1KSYCR/ref=sr_1_5?dchild=1&keywords=ukulele&qid=1608545307&sr=8-5 '
     msg = f"Subject: {subject} \n\n {body}"
     
     server.sendmail( 
-    'mdevyani0@gmail',
-    'mdevyani0@gmail',
+    'your email ID',
+    'your email ID',
     msg)
     
     print("EMAIL HAS BEEN SENT ")
